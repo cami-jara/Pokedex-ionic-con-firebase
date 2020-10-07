@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="es">
   <head>
     <!-- Required meta tags -->
@@ -18,9 +18,9 @@
         <h3>Sport Life</h3>
     </header>
      
-    <main class="container-fluid mt-5">
-        <section class=" row col-lg-6 mx-auto">
-            <div class="">
+    <main class="container-fluid">
+        <section class="row mt-5">
+            <div class="col-lg-6 mx-auto">
                 <div class="card">
                     <div class="card-header bg-dark bg-gradient text-white">
                         <span>Registrar Cliente</span>
@@ -29,40 +29,43 @@
                         <div id="errores-div">
                             
                         </div>
-                        <div class="form-group mb-3">
+                        <div class="form-group">
                             <label for="nombre-txt">Nombre del cliente</label>
                             <input type="text" id="nombre-txt" class="form-control">
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="tipo-select">Tipo de plan</label>
-                            <select id="tipo-select" class="form-select">
-                                <option >2 veces por semana</option>
-                                <option >3 veces por semana</option>
-                                <option >Ilimitado</option>
+                        <div class="form-group">
+                            <label for="tipo-select">Tipo de Plan</label>
+                            <select id="tipo-select" class="form-control">
+                                <option>2 veces por semana</option>
+                                <option>3 veces por semana</option>
+                                <option>Ilimitado</option>
                             </select>
                         </div>
                     
-                        <div class="form-group mb-3">
+                        <div class="form-group">
                             <label for="pago-select">Medio de Pago</label>
-                            <select id="pago-select" class="form-select">
-                                <option>Efectivo</option>
-                                <option>Tarjeta</option>
+                            <select id="pago-select" class="form-control">
+                                <option value="efectivo">Efectivo</option>
+                                <option value="tarjeta">Tarjeta</option>
                             </select>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="js-switch">Estado de pago</label>
+                        <div class="form-group">
+                            <label for="opcion-switch">Estado de pago</label>
                             <input type="checkbox" class="js-switch" checked/>      
                         </div>
                     </div>
                 </div>
+                
                     <div class="card-footer">
                         <button type="button" id="agregar-btn" class="btn btn-info btn-block text-white">Agregar</button>
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md col-lg">
-                <div class="card">
-
+        </div>
+            <div class="card" id="resultados-div">
+                <div class="card-body">
+                <div id="estado-div">
+                   </div>
                 </div>
             </div>
         </section>
