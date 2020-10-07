@@ -33,6 +33,7 @@
                         <div class="form-group">
                             <label for="nombre-txt">Nombre del cliente</label>
                             <input type="text" id="nombre-txt" class="form-control">
+                            <label for="">{{checkedbox}}</label>
                         </div>
                         <div class="form-group">
                             <label for="tipo-select">Tipo de Plan</label>
@@ -53,7 +54,9 @@
                         <div class="form-group">
                             <label for="opcion-switch">Estado de pago</label>
                             <br>
-                            <input type="checkbox" class="js-switch" checked/>      
+                            <input type="checkbox" class="js-switch" checked/> 
+                            <label for=""></label>
+                                 
                         </div>
                     </div>
                 </div>
@@ -64,12 +67,17 @@
                 </div>
             </div>
         </div>
-            <div class="card" id="resultados-div">
+        <div class="card col-lg-6 mx-auto">
                 <div class="card-body">
+                    <div id="estado-div">
+
+                    </div>
+                </div>
                 <div id="estado-div">
-                   </div>
+
                 </div>
             </div>
+        </div>
         </section>
     </main>
 
@@ -89,9 +97,12 @@
          var init = new Switchery(elem,{
 
             color             : '#083D2E'
+            , className       : 'switchery'
             , secondaryColor  : '#1772A0'
             ,speed            : '0.5s'
             ,size             : 'large'
+            ,checkedbox        :'true'
+         
          });
 
      </script>

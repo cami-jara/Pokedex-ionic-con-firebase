@@ -1,6 +1,6 @@
-window.cargarTabla = ()=>{
-    const tabla = document.querySelector("#confesiones-table > tbody");
-    tabla.innerHTML = "";
+window.cargarTarjeta = ()=>{
+    const tarjeta = document.querySelector("#confesiones-table > tbody");
+    tarjeta.innerHTML = "";
     for(let i=0; i < window.confesiones.length; ++i){
         let confesionActual = window.confesiones[i];
         let tr = document.createElement("tr");
