@@ -16,11 +16,11 @@
   </head>
   <body>
     <header class="bg-dark text-white bg-gradient p-3 text-center">
-        <h3>Sport Life</h3>
+        <h3>Gym Sport Life - Vida Sana Cuerpo Sano</h3>
     </header>
      
     <main class="container-fluid">
-        <section class="row mt-5">
+        <div class="row mt-5">
             <div class="col-lg-6 mx-auto">
                 <div class="card">
                     <div class="card-header bg-dark bg-gradient text-white">
@@ -33,7 +33,6 @@
                         <div class="form-group">
                             <label for="nombre-txt">Nombre del cliente</label>
                             <input type="text" id="nombre-txt" class="form-control">
-                            <label for="">{{checkedbox}}</label>
                         </div>
                         <div class="form-group">
                             <label for="tipo-select">Tipo de Plan</label>
@@ -55,7 +54,7 @@
                             <label for="opcion-switch">Estado de pago</label>
                             <br>
                             <input type="checkbox" class="js-switch" checked/> 
-                            <label for=""></label>
+                            <label for="">{{checkedbox}}</label>
                                  
                         </div>
                     </div>
@@ -67,18 +66,20 @@
                 </div>
             </div>
         </div>
-        <div class="card col-lg-6 mx-auto">
+        <div class="row row-cols-2 row-cols-md-3 g-3 p-1">
+            <div class="col"></div>
                 <div class="card-body">
                     <div id="estado-div">
 
                     </div>
                 </div>
                 <div id="estado-div">
-
+                   
                 </div>
             </div>
         </div>
-        </section>
+        </div>
+    </div>
     </main>
 
 
@@ -100,7 +101,7 @@
             , className       : 'switchery'
             , secondaryColor  : '#1772A0'
             ,speed            : '0.5s'
-            ,size             : 'large'
+            ,size             : 'small'
             ,checkedbox        :'true'
          
          });
