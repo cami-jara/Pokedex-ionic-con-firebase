@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <!-- Required meta tags -->
@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="bg-dark text-white bg-gradient p-3 text-center">
-        <h3>Gym Sport Life - Vida Sana Cuerpo Sano</h3>
+        <h3>Gym Sport Life</h3>
     </header>
      
     <main class="container-fluid">
@@ -37,9 +37,9 @@
                         <div class="form-group">
                             <label for="tipo-select">Tipo de Plan</label>
                             <select id="tipo-select" class="form-control">
-                                <option>2 veces por semana</option>
-                                <option>3 veces por semana</option>
-                                <option>Ilimitado</option>
+                                <option value="$14.000">2 veces por semana</option>
+                                <option value="$17.000">3 veces por semana</option>
+                                <option value="$20.000">Ilimitado</option>
                             </select>
                         </div>
                     
@@ -52,9 +52,7 @@
                         </div>
                         <div class="form-group">
                             <label for="opcion-switch">Estado de pago</label>
-                            <br>
-                            <input type="checkbox" class="js-switch" checked/> 
-                            <label for="">{{checkedbox}}</label>
+                            <input type="checkbox" class="js-switch" id="opcion-switch" checked/> 
                                  
                         </div>
                     </div>
@@ -66,18 +64,8 @@
                 </div>
             </div>
         </div>
-        <div class="row row-cols-2 row-cols-md-3 g-3 p-1">
-            <div class="col"></div>
-                <div class="card-body">
-                    <div id="estado-div">
-
-                    </div>
-                </div>
-                <div id="estado-div">
-                   
-                </div>
-            </div>
-        </div>
+        <br>
+        <div class="row cards">
         </div>
     </div>
     </main>
@@ -94,8 +82,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
      <script>
-         var elem = document.querySelector('.js-switch');
-         var init = new Switchery(elem,{
+         var estado = document.querySelector('.js-switch');
+         var init = new Switchery(estado,{
 
             color             : '#083D2E'
             , className       : 'switchery'
